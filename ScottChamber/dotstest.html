@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon1.png">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<!--Load Cycle and jQuery-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+<script type="text/javascript">
+function dummybutton() {
+alert("Button not initialzed");
+console.log("Clicked");
+}
+</script>
+<script>
+//function moveSlide(direction) {
+//    $(".slidepic").cycle(direction);
+//	pause: -1;
+//} // End function
+
+//$(document).ready(function () {
+//    $(".slidepic").cycle({
+//        fx: 'fade',
+//        speed: 300,
+//        timeout: 0,
+//		fit: 1,
+//		continous: 1,
+//		pause: 1,
+ //   });
+//});
+$(function() {
+    $('.slidepic').cycle({
+        fx:     'scrollHorz',
+        speed:  400,
+        timeout: 6000,
+        cleartypeNoBg: true,
+        pager:  '.dots',
+        pagerAnchorBuilder: function paginate(idx, el) {
+			return '<a class="service' + idx + '" href="#" >&bull;</a>';
+}
+    });
+});
+</script>
+<!--End Load-->
+<!--Menubar-->
+<script>
+// Javascript originally by Patrick Griffiths and Dan Webb.
+// http://htmldog.com/articles/suckerfish/dropdowns/
+sfHover = function() {
+   var sfEls = document.getElementById("navbar").getElementsByTagName("li");
+   for (var i=0; i<sfEls.length; i++) {
+      sfEls[i].onmouseover=function() {
+         this.className+=" hover";
+      }
+      sfEls[i].onmouseout=function() {
+         this.className=this.className.replace(new RegExp(" hover\\b"), "");
+      }
+   }
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+</head>
+<body>
+<div class="wrapper">
+<div class="header">
+  <center>
+    <img src="images/logo.png" alt="#" />
+  </center>
+</div>
+<div class="menubar">
+  <center>
+    <div class="menubarcontent">
+      <ul id="navbar">
+        <!-- The strange spacing herein prevents an IE6 whitespace bug. -->
+        <li><a href="#" class="menubtn">Home</a> </li>
+        <li><a href="#" class="menubtn">The Chamber</a>
+          <ul>
+            <li><a href="#">About the Chamber</a></li>
+            <li><a href="#">Chamber Benefits</a></li>
+            <li><a href="#">Leadership Programs</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="menubtn">Advocacy</a>
+          <ul>
+            <li><a href="#">Executives</a></li>
+            <li><a href="#">Comittee Chairs</a></li>
+            <li><a href="#">Chamber Ambassadors</a></li>
+            <li><a href="#">Volunteer Comittee Chairs</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="menubtn">Business Directory</a>
+          <ul>
+            <li><a href="#">Full Listing</a></li>
+            <li> <a href="#">Arts & Entertainment</a></li>
+            <li> <a href="#">Associative Members</a></li>
+            <li> <a href="#">Automotive</a></li>
+            <li> <a href="#">Business & Professional Services</a></li>
+            <li> <a href="#">Community & Civic Organizations</a></li>
+            <li> <a href="#">Construction & Contractors</a></li>
+            <li> <a href="#">Education</a></li>
+            <li> <a href="#">Food & Dining</a></li>
+            <li> <a href="#">Government</a></li>
+            <li> <a href="#">Health & Medicine</a></li>
+            <li> <a href="#">Industry & Agriculture</a></li>
+            <li> <a href="#">Legal & Finance</a></li>
+            <li> <a href="#">Media & Communications</a></li>
+            <li> <a href="#">Personal Care & Services</a></li>
+            <li> <a href="#">Real Estate</a></li>
+            <li> <a href="#">Retail Business & Shopping</a></li>
+            <li> <a href="#">Travel & Transportation</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="menubtn">Events & Programs</a>
+          <ul>
+            <li><a href="#">Chamber Calendar</a></li>
+            <li><a href="#">Annual Events</a></li>
+            <li><a href="#">Net-Events</a></li>
+            <li><a href="#">Get Noticed</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="menubtn">News & Policy</a>
+          <ul>
+            <li><a href="#">Agenda</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="#">Links & Resources</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="menubtnlast">Media</a>
+          <ul>
+            <li><a href="#">Photo Gallery</a></li>
+            <li><a href="#">Video Gallery</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </center>
+</div>
+<div class="content">
+  <center>
+    <div class="slideshow">
+      <div class="slidepic"> <img src="images/Spring-Fling.jpg" height="475" width="100%" alt="#" /> <img src="images/chamber_outing.jpg" height="475" width="100%" alt="#" /> <img src="images/businessoftheyear.jpg" width="100%" height="475" alt="#" /><img src="images/platinumsponsors.jpg" width="100%" height="475" alt="#" /><img src="images/shopscott.jpg" width="100%" height="475" alt="#" /><img src="images/goodneighboraward.jpg" width="100%" height="475" alt="#" /> </div>
+      <!--<div id="dots">
+          <button onClick="moveSlide('prev');">&#60</button>
+          <button onClick="moveSlide('next');">&#62</button>
+        </div>-->
+      <div id="surroundme"><ul id="dots" class="dots"></ul></div>
+    </div>
+  </center>
+</div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+<title>Home</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon1.png">
+<link href="style2.css" rel="stylesheet" type="text/css">
+</head>
+
+<!--Load Cycle and jQuery-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+<script type="text/javascript">
+function dummybutton() {
+alert("Button not initialzed");
+console.log("Clicked");
+}
+</script>
+<script>
+function moveSlide(direction) {
+    $(".slidepic").cycle(direction);
+} // End function
+
+$(document).ready(function () {
+    $(".slidepic").cycle({
+        fx: 'fade',
+        speed: 300,
+        timeout: 0,
+		fit: 1,
+		continous: 1,
+		pause: 1,
+    });
+});
+</script>
+<!--End Load-->
+<!--Menubar-->
+<script>
+// Javascript originally by Patrick Griffiths and Dan Webb.
+// http://htmldog.com/articles/suckerfish/dropdowns/
+sfHover = function() {
+   var sfEls = document.getElementById("navbar").getElementsByTagName("li");
+   for (var i=0; i<sfEls.length; i++) {
+      sfEls[i].onmouseover=function() {
+         this.className+=" hover";
+      }
+      sfEls[i].onmouseout=function() {
+         this.className=this.className.replace(new RegExp(" hover\\b"), "");
+      }
+   }
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+<body>
+<div id="wrapper">
+  <div id="footer">
+    <div class="header">
+      <center>
+        <img src="images/logo.png" />
+      </center>
+    </div>
+  </div>
+  <div id="body">
+    <div class="menubar">
+      <div class="menubarcontent">
+        <ul id="navbar">
+          <!-- The strange spacing herein prevents an IE6 whitespace bug. -->
+          <li><a href="#" class="menubtn">Home</a> </li>
+          <li><a href="#" class="menubtn">The Chamber</a>
+            <ul>
+              <li><a href="#">About the Chamber</a></li>
+              <li><a href="#">Chamber Benefits</a></li>
+              <li><a href="#">Leadership Programs</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menubtn">Advocacy</a>
+            <ul>
+              <li><a href="#">Executives</a></li>
+              <li><a href="#">Comittee Chairs</a></li>
+              <li><a href="#">Chamber Ambassadors</a></li>
+              <li><a href="#">Volunteer Comittee Chairs</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menubtn">Business Directory</a>
+            <ul>
+              <li><a href="#">Full Listing</a></li>
+              <li> <a href="#">Arts & Entertainment</a></li>
+              <li> <a href="#">Associative Members</a></li>
+              <li> <a href="#">Automotive</a></li>
+              <li> <a href="#">Business & Professional Services</a></li>
+              <li> <a href="#">Community & Civic Organizations</a></li>
+              <li> <a href="#">Construction & Contractors</a></li>
+              <li> <a href="#">Education</a></li>
+              <li> <a href="#">Food & Dining</a></li>
+              <li> <a href="#">Government</a></li>
+              <li> <a href="#">Health & Medicine</a></li>
+              <li> <a href="#">Industry & Agriculture</a></li>
+              <li> <a href="#">Legal & Finance</a></li>
+              <li> <a href="#">Media & Communications</a></li>
+              <li> <a href="#">Personal Care & Services</a></li>
+              <li> <a href="#">Real Estate</a></li>
+              <li> <a href="#">Retail Business & Shopping</a></li>
+              <li> <a href="#">Travel & Transportation</a></li>
+              <li>
+            </ul>
+          </li>
+          <li><a href="#" class="menubtn">Events & Programs</a>
+            <ul>
+              <li><a href="#">Chamber Calendar</a></li>
+              <li><a href="#">Annual Events</a></li>
+              <li><a href="#">Net-Events</a></li>
+              <li><a href="#">Get Noticed</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menubtn">News & Policy</a>
+            <ul>
+              <li><a href="#">Agenda</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Publications</a></li>
+              <li><a href="#">Links & Resources</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menubtnlast">Media</a>
+            <ul>
+              <li><a href="#">Photo Gallery</a></li>
+              <li><a href="#">Video Gallery</a></li>
+            </ul>
+        </ul>
+      </div>
+    </div>
+    <!--<div class="content">
+      <center>
+        <div class="slideshow">
+          <div class="slidepic"> <img src="images/avengers.jpg" height="475" width="100%" /> <img src="images/tronlegacy.png" height="475" width="100%" /> <img src="http://cdn.pocket-lint.com/images/JtKM/porsche-cayman-pictures-and-hands-on-0.jpg?20121130-191448" width="100%" height="475" /> </div>
+          <div id="dots">
+            <button onClick="moveSlide('prev');"><</button>
+            <button onClick="moveSlide('next');">></button>
+          </div>
+        </div>
+      </center>
+      <div class="quote">
+        <h3><i>"Insert quote from a member of the Chamber."</i></h3>
+        <p><i>-John Doe, Title, Goal Statement - 2013</i></p>
+      </div>
+    </div>-->
+    <div class="icontent">
+      <h2>Latest Roundabouts</h2>
+      <table width="100%" border="0" class="table">
+        <tr> 
+          <!--Pictures--->
+          <td><img src="images/someguy.jpg" width="256" height="256"></td>
+          <td><img src="images/turkeydinner.jpg" width="256" height="256"?</td>
+        </tr>
+        <tr> 
+          <!--Headers--->
+          <td><h3>Monthly Director's Meeting</h3></td>
+          <td><h3>Annual Christmas Dinner</h3></td>
+        </tr>
+        <tr> 
+          <!---Info--->
+          <td><p>Some info</p>
+            <p>Some info</p>
+            <button>Read more</button></td>
+          <td><p>Some info</p>
+            <p>Some info</p>
+            <button>Read more</button></td>
+        </tr>
+      </table>
+      <h2>Upcoming Events</h2>
+      <table width="100%" border="0" class="table">
+        <tr> 
+          <!--Pictures--->
+          <td><img src="images/angeltree.jpg" width="256" height="256"></td>
+          <td><img src="images/vote.jpg" width="256" height="256"?</td>
+        </tr>
+        <tr> 
+          <!--Headers--->
+          <td><h3>Angel Tree Celebration</h3></td>
+          <td><h3>Officer Election</h3></td>
+        </tr>
+        <tr> 
+          <!---Info--->
+          <td><p>Some info</p>
+            <button>Read more</button></td>
+          <td><p>Some info</p>
+            <button>Read more</button></td>
+        </tr>
+      </table>
+    </div>
+    <div class="sidebar">
+      <div class="innercontent">
+        <h1>Locate Us!</h1>
+        <p>1234 N. SMITH STREET
+          SCOTTSBURG, IN 47170</p>
+        <p>Phone: 123-456-7890</p>
+        <h1>Agenda</h1>
+        <h3>Jan. 1 5:00 PM</h3>
+        <p>Scottsburg High School - Luncheon</p>
+        <h3>8:00 PM</h3>
+        <p>Jeeves & Co. - Ribbon Cutting</p>
+        <h3>Jan. 16 10:00 AM</h3>
+        <p>Mayor’s Office - Director’s Meeting</p>
+        <h3>Jan. 20 2:00 PM</h3>
+        <p>Lake Iola - Awards Luncheon</p>
+        <h3>Jan. 27 8:10 AM</h3>
+        <p>Scott County Courthouse - Meeting</p>
+        <h1>Join The E-List</h1>
+        <p>First Name:</p>
+        <input type="text">
+        <p>Last Name:</p>
+        <input type="text">
+        <p>Email Address:</p>
+        <input type="text">
+        <p>
+          <input type="submit" value="Submit" onclick="dummybutton()">
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="footer">
+      <h5>Footer info</h5>
+    </div>
+  </div>
+</div>
+</body>
+</html>

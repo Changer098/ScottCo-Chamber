@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<head><noframes></noframes><noscript></noscript><!-- --><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/p.js"></script><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon1.png">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<!--Load Cycle and jQuery-->
+<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/55138624/jquery.min.js"></script>
+<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/55138624/jquery.cycle.lite.js"></script>
+<script type="text/javascript">
+function dummybutton() {
+alert("Button not initialzed");
+console.log("Clicked");
+}
+</script>
+<script>
+$(function() {
+    $('.slidepic').cycle({
+        fx:     'scrollHorz',
+        speed:  400,
+        timeout: 3000,
+        cleartypeNoBg: true,
+        pager:  '.dots',
+		pause: 1,
+        pagerAnchorBuilder: function paginate(idx, el) {
+			return '<a class="service' + idx + '" href="#" >&bull;</a>';
+}
+    });
+});
+</script>
+<!--End Load-->
+<!--Menubar-->
+<script>
+// Javascript originally by Patrick Griffiths and Dan Webb.
+// http://htmldog.com/articles/suckerfish/dropdowns/
+sfHover = function() {
+   var sfEls = document.getElementById("navbar").getElementsByTagName("li");
+   for (var i=0; i<sfEls.length; i++) {
+      sfEls[i].onmouseover=function() {
+         this.className+=" hover";
+      }
+      sfEls[i].onmouseout=function() {
+         this.className=this.className.replace(new RegExp(" hover\\b"), "");
+      }
+   }
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <center>
+      <img src="images/logo.png" alt="#" />
+    </center>
+  </div>
+  <div class="menubar">
+    <center>
+      <div class="menubarcontent">
+        <ul id="navbar">
+          <!-- The strange spacing herein prevents an IE6 whitespace bug. -->
+          <li><a href="#" class="menubtn">Home</a> </li>
+          <li><a href="thechamber/chamber.html" class="menubtn">The Chamber</a>
+            <ul>
+              <li><a href="thechamber/chamber.html">About the Chamber</a></li>
+              <li><a href="thechamber/benefits.html">Chamber Benefits</a></li>
+              <li><a href="thechamber/leadership.html">Leadership Programs</a></li>
+            </ul>
+          </li>
+          <li><a href="advocacy/advocacy.html" class="menubtn">Advocacy</a>
+            <ul>
+              <li><a href="advocacy/advocacy.html">Executives</a></li>
+              <li><a href="advocacy/committee_chairs.html">Committee Chairs</a></li>
+              <li><a href="advocacy/chamber_ambassadors.html">Chamber Ambassadors</a></li>
+              <li><a href="advocacy/volunteer_committee_members.html">Volunteer Committee Chairs</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menubtn">Business Directory</a>
+            <ul>
+              <li><a href="#">Full Listing</a></li>
+              <li> <a href="#">Arts & Entertainment</a></li>
+              <li> <a href="#">Associative Members</a></li>
+              <li> <a href="#">Automotive</a></li>
+              <li> <a href="#">Business & Professional Services</a></li>
+              <li> <a href="#">Community & Civic Organizations</a></li>
+              <li> <a href="#">Construction & Contractors</a></li>
+              <li> <a href="#">Education</a></li>
+              <li> <a href="#">Food & Dining</a></li>
+              <li> <a href="#">Government</a></li>
+              <li> <a href="#">Health & Medicine</a></li>
+              <li> <a href="#">Industry & Agriculture</a></li>
+              <li> <a href="#">Legal & Finance</a></li>
+              <li> <a href="#">Media & Communications</a></li>
+              <li> <a href="#">Personal Care & Services</a></li>
+              <li> <a href="#">Real Estate</a></li>
+              <li> <a href="#">Retail Business & Shopping</a></li>
+              <li> <a href="#">Travel & Transportation</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menubtn">Events & Programs</a>
+            <ul>
+              <li><a href="eventsprograms/calendar.html">Chamber Calendar</a></li>
+              <li><a href="#">Annual Events</a></li>
+              <li><a href="#">Net-Events</a></li>
+              <li><a href="#">Get Noticed</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menubtn">News & Policy</a>
+            <ul>
+              <li><a href="newspolicies/agenda.html">Agenda</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Publications</a></li>
+              <li><a href="#">Links & Resources</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menubtnlast">Media</a>
+            <ul>
+              <li><a href="media/photos.html">Photo Gallery</a></li>
+              <li><a href="media/videos.html">Video Gallery</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </center>
+  </div>
+  <div class="content">
+    <center>
+      <div class="slideshow">
+        <div class="slidepic"> <img src="images/Spring-Fling.jpg" height="475" width="100%" alt="#" /> <img src="images/chamber_outing.jpg" height="475" width="100%" alt="#" /> <img src="images/businessoftheyear.jpg" width="100%" height="475" alt="#" /><img src="images/platinumsponsors.jpg" width="100%" height="475" alt="#" /><img src="images/shopscott.jpg" width="100%" height="475" alt="#" /><img src="images/goodneighboraward.jpg" width="100%" height="475" alt="#" /> </div>
+        <!--<div id="dots">
+          <button onClick="moveSlide('prev');">&#60</button>
+          <button onClick="moveSlide('next');">&#62</button>
+        </div>-->
+        <div id="surroundme">
+          <ul id="dots" class="dots">
+          </ul>
+        </div>
+      </div>
+    </center>
+    <div class="quote">
+      <h3><i>"Insert quote from a member of the Chamber."</i></h3>
+      <p style="position: relative;bottom: 3px;"><i>-John Doe, Title, Goal Statement - 2013</i></p>
+    </div>
+  </div>
+  <!--<div class="icontent">
+    <h2>Latest Roundabouts</h2>
+    <table width="100%" border="0" class="table">
+      <tr> 
+        <!--Pictures---> 
+  <!--<td><img src="images/someguy.jpg" width="256" height="256"></td>
+        <td><img src="images/turkeydinner.jpg" width="256" height="256"></td>
+      </tr>
+      <tr> 
+        <!--Headers--> 
+  <!--<td><h3>Monthly Director's Meeting</h3></td>
+        <td><h3>Annual Christmas Dinner</h3></td>
+      </tr>
+      <tr> 
+        <!---Info---> 
+  <!--<td><p>Some info</p>
+          <p>Some info</p>
+          <button>Read more</button></td>
+        <td><p>Some info</p>
+          <p>Some info</p>
+          <button>Read more</button></td>
+      </tr>
+    </table>
+    <h2>Upcoming Events</h2>
+    <table width="100%" border="0" class="table">
+      <tr> 
+        <!--Pictures---> 
+  <!--<td><img src="images/angeltree.jpg" width="256" height="256" alt="#"></td>
+        <td><img src="images/vote.jpg" width="256" height="256" alt="#"></td>
+      </tr>
+      <tr> 
+        <!--Headers---> 
+  <!--<td><h3>Angel Tree Celebration</h3></td>
+        <td><h3>Officer Election</h3></td>
+      </tr>
+      <tr> 
+        <!---Info---> 
+  <!--<td><p>Some info</p><p>Some info</p>
+          <button>Read more</button></td>
+        <td><p>Some info</p><p>Some info</p>
+          <button>Read more</button></td>
+      </tr>
+    </table>
+  </div>-->
+  <div class="latestposts">
+    <h1>Latest Posts</h1>
+  </div>
+  <div id="container">
+    <div id="container2">
+      <div class="container-bits">
+        <div class="post_title">
+          <h3 class="title_text">Site Renovation Status: Green</h3>
+          <p class="title_author">Posted on March 13, 2013  by  Mitchel Sebastian</p>
+        </div>
+        <p class="post_text">The Chamber of Commerce website is now in green for site renovation. The website will be undergoing a major designing renovation and will be down for a number of days as of March 14, 2013 at 10:32 AM EST . No new posts or features will be displayed until after the site renovation has been concluded. Check back later for a new design with a fashionable style! See ya’ then!</p>
+        <p>Comments are not allowed.</p>
+      </div>
+      <div class="container-bits">
+        <div class="post_title">
+          <h3 class="title_text">2012 Scott Chamber Christmas Party at Hampton Oaks</h3>
+          <p class="title_author">Posted on December 7, 2012  by  edavis</p>
+        </div>
+        <p class="post_text"><img src="http://scottchamber.org/wp/wp-content/uploads/2012/12/2000-01-01-00.02.05-620x412.jpg" alt="#"> </p>
+      </div>
+      <div class="container-bits">
+        <div class="post_title">
+          <h3 class="title_text">2012 Scott County Chamber Dinner</h3>
+          <p class="title_author">Posted on November 26, 2012  by  edavis</p>
+        </div>
+        <p class="post_text"><img src="http://scottchamber.org/wp/wp-content/uploads/2012/07/Mike-St.-Clair-620x928.jpg" width="310" height="464" alt="#"><img src="http://scottchamber.org/wp/wp-content/uploads/2012/11/Roxanna-Bixler1.jpg" width="320" height="480"</p>
+      </div>
+      <div class="container-bits">
+        <div class="post_title">
+          <h3 class="title_text">Title Four</h3>
+        </div>
+      </div>
+      <div class="container-bits">
+        <div class="post_title">
+          <h3 class="title_text">Title Five</h3>
+        </div>
+      </div>
+      <div class="container-bits">
+        <div class="post_title">
+          <h3 class="title_text">Title Six</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="upcomingevents">
+      <h1>Upcoming Events</h1>
+    </div>
+  <div id="container_2">
+    <div id="container2_2">
+      <div class="container-bits">
+        <div class="post_title">
+          <h3 class="event_text">Event 1</h3>
+        </div>
+        <p style="text-indent: 10px">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sidebar">
+  <div class="innercontent">
+    <h1>Locate Us!</h1>
+    <p>1234 N. SMITH STREET
+      SCOTTSBURG, IN 47170</p>
+    <p>Phone: 123-456-7890</p>
+    <h1>Agenda</h1>
+    <h3>Jan. 1 5:00 PM</h3>
+    <p>Scottsburg High School - Luncheon</p>
+    <h3>8:00 PM</h3>
+    <p>Jeeves & Co. - Ribbon Cutting</p>
+    <h3>Jan. 16 10:00 AM</h3>
+    <p>Mayor's Office - Director's Meeting</p>
+    <h3>Jan. 20 2:00 PM</h3>
+    <p>Lake Iola - Awards Luncheon</p>
+    <h3>Jan. 27 8:10 AM</h3>
+    <p>Scott County Courthouse - Meeting</p>
+    <h1>Join The E-List</h1>
+    <p>First Name:</p>
+    <input type="text">
+    <p>Last Name:</p>
+    <input type="text">
+    <p>Email Address:</p>
+    <input type="text">
+    <p>
+      <input type="submit" value="Submit" onclick="dummybutton()">
+    </p>
+  </div>
+</div>
+<div class="push"></div>
+</div>
+<div id="fb-logo" onclick="window.open('https://www.facebook.com/pages/Scott-County-Chamber-of-Commerce/100914396665009','_self')"> </div>
+<div id="rss-logo"> </div>
+<!--<div class="footer">
+  <h5>Footer info</h5>
+</div>-->
+</body>
+</html>

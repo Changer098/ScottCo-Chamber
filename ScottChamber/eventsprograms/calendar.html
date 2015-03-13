@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Events &amp; Programs | Calendar</title>
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon1.png">
+<link href="../style.css" rel="stylesheet" type="text/css">
+<!--Load Cycle and jQuery-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+<script type="text/javascript">
+function dummybutton() {
+alert("Button not initialzed");
+console.log("Clicked");
+}
+</script>
+<script>
+$(function() {
+    $('.slidepic').cycle({
+        fx:     'scrollHorz',
+        speed:  400,
+        timeout: 3000,
+        cleartypeNoBg: true,
+        pager:  '.dots',
+		pause: 1,
+        pagerAnchorBuilder: function paginate(idx, el) {
+			return '<a class="service' + idx + '" href="#" >&bull;</a>';
+}
+    });
+});
+</script>
+<!--End Load-->
+<!--Menubar-->
+<script>
+// Javascript originally by Patrick Griffiths and Dan Webb.
+// http://htmldog.com/articles/suckerfish/dropdowns/
+sfHover = function() {
+   var sfEls = document.getElementById("navbar").getElementsByTagName("li");
+   for (var i=0; i<sfEls.length; i++) {
+      sfEls[i].onmouseover=function() {
+         this.className+=" hover";
+      }
+      sfEls[i].onmouseout=function() {
+         this.className=this.className.replace(new RegExp(" hover\\b"), "");
+      }
+   }
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <p>&nbsp;</p>
+  <div class="header">
+    <center>
+      <img src="../images/logo.png" alt="#" />
+    </center>
+  </div>
+  <div class="menubar">
+    <center>
+      <div class="menubarcontent">
+        <ul id="navbar">
+        <!-- The strange spacing herein prevents an IE6 whitespace bug. -->
+        <li><a href="../index.html" class="menubtn">Home</a> </li>
+        <li><a href="../thechamber/chamber.html" class="menubtn">The Chamber</a>
+          <ul>
+            <li><a href="../thechamber/chamber.html">About the Chamber</a></li>
+            <li><a href="../thechamber/benefits.html">Chamber Benefits</a></li>
+            <li><a href="../thechamber/leadership.html">Leadership Programs</a></li>
+          </ul>
+        </li>
+        <li><a href="../advocacy/advocacy.html" class="menubtn">Advocacy</a>
+          <ul>
+            <li><a href="../advocacy/advocacy.html">Executives</a></li>
+            <li><a href="../advocacy/committee_chairs.html">Committee Chairs</a></li>
+            <li><a href="../advocacy/chamber_ambassadors.html">Chamber Ambassadors</a></li>
+            <li><a href="../advocacy/volunteer_committee_members.html">Volunteer Committee Chairs</a></li>
+          </ul>
+        </li>
+        <li><a href="../businessdirectory/index.html" class="menubtn">Business Directory</a>
+          <ul>
+            <li><a href="../businessdirectory/index.html">Full Listing</a></li>
+            <li> <a href="../businessdirectory/index.html">Arts & Entertainment</a></li>
+            <li> <a href="../businessdirectory/index.html">Associative Members</a></li>
+            <li> <a href="../businessdirectory/index.html">Automotive</a></li>
+            <li> <a href="../businessdirectory/index.html">Business & Professional Services</a></li>
+            <li> <a href="../businessdirectory/index.html">Community & Civic Organizations</a></li>
+            <li> <a href="../businessdirectory/index.html">Construction & Contractors</a></li>
+            <li> <a href="../businessdirectory/index.html">Education</a></li>
+            <li> <a href="../businessdirectory/index.html">Food & Dining</a></li>
+            <li> <a href="../businessdirectory/index.html">Government</a></li>
+            <li> <a href="../businessdirectory/index.html">Health & Medicine</a></li>
+            <li> <a href="../businessdirectory/index.html">Industry & Agriculture</a></li>
+            <li> <a href="../businessdirectory/index.html">Legal & Finance</a></li>
+            <li> <a href="../businessdirectory/index.html">Media & Communications</a></li>
+            <li> <a href="../businessdirectory/index.html">Personal Care & Services</a></li>
+            <li> <a href="../businessdirectory/index.html">Real Estate</a></li>
+            <li> <a href="../businessdirectory/index.html">Retail Business & Shopping</a></li>
+            <li> <a href="../businessdirectory/index.html">Travel & Transportation</a></li>
+          </ul>
+        </li>
+        <li><a href="../eventsprograms/calendar.html" class="menubtn">Events & Programs</a>
+          <ul>
+            <li><a href="../eventsprograms/calendar.html">Chamber Calendar</a></li>
+            <li><a href="../eventsprograms/annualevents.html">Annual Events</a></li>
+            <li><a href="../eventsprograms/netevents.html">Net-Events</a></li>
+            <li><a href="../eventsprograms/getnoticed.html">Get Noticed</a></li>
+          </ul>
+        </li>
+        <li><a href="../newspolicies/agenda.html" class="menubtn">News & Policy</a>
+          <ul>
+            <li><a href="../newspolicies/agenda.html">Agenda</a></li>
+            <li><a href="../newspolicies/newsroom.html">Newsroom</a></li>
+            <!--<li><a href="#">Publications</a></li>-->
+            <li><a href="../newspolicies/linksresources.html">Links & Resources</a></li>
+          </ul>
+        </li>
+        <li><a href="../media/photos.html" class="menubtnlast">Media</a>
+          <ul>
+            <li><a href="../media/photos.html">Photo Gallery</a></li>
+            <li><a href="../media/videos.html">Video Gallery</a></li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </center>
+  </div>
+  <div class="content">
+  <div class="txtcontent">
+    <div class="mainheader">
+      <h1>Events & Programs...<i>Calendar</i></h1>
+    </div>
+  </div>
+  <br>
+  <table border="1" class="calendar">
+      <tr>
+      <td class="calendar-days-first"><b>Sunday</b></td>
+      <td class="calendar-days"><b>Monday</b></td>
+      <td class="calendar-days"><b>Tuesday</b></td>
+      <td class="calendar-days"><b>Wendesday</b></td>
+      <td class="calendar-days"><b>Thursday</b></td>
+      <td class="calendar-days"><b>Friday</b></td>
+      <td class="calendar-days-last"><b>Saturday</b></td>
+    </tr>
+      <td class="calendar-row"><p class="row_num"></p></td>
+      <td class="calendar-row"><p class="row_num"></p></td>
+      <td class="calendar-row"><p class="row_num"></p></td>
+      <td class="calendar-row"><p class="row_num"><b>1</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>2</b></p><ul><li>New Year Planning Meeting</li></ul></td>
+      <td class="calendar-row"><p class="row_num"><b>3</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>4</b></p></td>
+    </tr>
+    <tr>
+      <td class="calendar-row"><p class="row_num"><b>5</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>6</b></p><ul><li>Director's Luncheon</li></ul></td>
+      <td class="calendar-row"><p class="row_num"><b>7</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>8</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>9</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>10</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>11</b></td>
+    </tr>
+    <tr>
+      <td class="calendar-row"><p class="row_num"><b>12</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>13</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>14</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>15</b></p><ul><li>Press Conference</li></ul></td>
+      <td class="calendar-row"><p class="row_num"><b>16</b></p><ul><li>Committee Meeting</li></ul></td>
+      <td class="calendar-row"><p class="row_num"><b>17</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>18</b></p></td>
+    </tr>
+    <tr>
+      <td class="calendar-row"><p class="row_num"><b>19</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>20</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>21</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>22</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>23</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>24</b></p><ul><li>Volunteer Work Day</li></ul></td>
+      <td class="calendar-row"><p class="row_num"><b>25</b></p></td>
+    </tr>
+    <tr>
+      <td class="calendar-row"><p class="row_num"><b>26</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>27</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>28</b></p><ul><li>Committee Meeting</li></ul></td>
+      <td class="calendar-row"><p class="row_num"><b>29</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>30</b></p></td>
+      <td class="calendar-row"><p class="row_num"><b>31</b></p></td>
+      <td class="calendar-row"><p class="row_num"></p></td>
+    </tr>
+    </table>
+
+
+</div>
+<div id="fb-logo" onClick="window.open('https://www.facebook.com/pages/Scott-County-Chamber-of-Commerce/100914396665009','_self')"> </div>
+<div id="rss-logo"> </div>
+<!--<div class="footer">
+  <h5>Footer info</h5>
+</div>-->
+</body>
+</html>
